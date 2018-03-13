@@ -1,0 +1,435 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sans-serif;
+    color: #555;
+}
+body{
+    scroll-behavior: smooth;
+    
+}
+ ul, nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+h1{
+    padding: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+
+
+@media (max-width: 1000px){
+    html{
+        font: normal 12px sans-serif;
+    color: #555;
+    }
+
+    section{
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 600px){
+    section{
+        padding: 80px 30px;
+    }
+}
+
+
+
+/*-------------
+    Header
+-------------*/
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+    list-style: none;
+    font-size: 32px;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+header nav li{
+    margin: 0 15px;
+    padding: 10px;
+    transition: .7s;
+    border-radius: 8px;
+}
+header nav li:hover {
+background-color: #000000;
+transition: .7s;
+opacity: 0.9;
+}
+header nav li:first-child{
+    margin-left: 0; 
+}
+header nav li:last-child{
+    margin-right: 0;    
+}
+
+
+
+@media (max-width: 800px){
+    header{
+        padding: 20px 50px;
+        font-size: 25px;
+    }
+    header nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav li{
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
+/*----------------
+    Hero Section
+----------------*/
+
+.background-top{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.background-top .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.background-top .background-image:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+.background-top h1{
+    font: bold 40px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.background-top h3{
+    font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 800px){
+
+    .background-top{
+        min-height: 800px;
+    }
+
+    .background-top h1{
+        font-size: 32px;
+    }
+
+    .background-top h3{
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+/*----------- 
+         SELF  
+-------------------*/
+.self{
+    background-color: #fff;
+    justify-content: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: : 100%;
+    
+}
+.selfimg{
+    
+    width: 80%;
+}
+@media (max-width: 1000px){
+    
+    }
+    .selfimg{
+        width: 100%;
+
+    }
+}
+/*-----------
+    WORK
+-------------*/
+.work{
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: : 100%;
+}
+.work h1{
+    text-align: center;
+}
+.work img{
+    width: 80%;
+}
+@media (max-width: 1000px){
+    .work img{
+    width: 100%;
+    }
+}
+/*--------------
+      CONCERT
+-------------*/
+
+.foto-concert{
+    text-align: center;
+}
+.foto-concert h1{
+    flex-basis: 100%;
+
+}
+.foto-concert .foto-rew ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    font: normal 20px 'Open Sans', sans-serif;
+}
+.foto-concert .foto-rew ul li{
+    position: relative;
+    margin: 10px;
+}
+.foto1{
+    width: 100%;
+}
+.concert-discription{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    text-align: center;
+    padding-top: 30%;
+    opacity: 0;
+    transition: .7s;
+    background-color: rgba(0,0,0,.5);
+    font: normal 40px 'Open Sans', sans-serif;
+}
+.foto-concert .foto-rew ul li:hover .concert-discription{
+    opacity: 1;
+    transition: .7s;
+}
+@media (max-width: 1000px) {
+    .foto-concert .foto-rew ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+     .foto-concert .foto-rew{
+        flex-basis: 100%;
+         }
+}
+/*------------------------
+        SPARTAK
+        -----------------*/
+.vid{
+    
+}
+.vid img{
+    width: 100%;
+}
+.vid .vid-s ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.vid .vid-s ul li{
+    
+    margin: 10px;
+}
+@media (max-width: 1000px){
+    .vid .vid-s ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+
+
+/*-------------------
+    МАШИНКИ
+    --------------*/
+
+.cars{
+
+}
+.cars img{
+    
+    width: 100%;
+}
+.cars .cars-wrapper ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.cars .cars-wrapper ul li{
+    position: relative;
+    margin: 10px;
+}
+.cars .cars-wrapper ul li:hover .cars-description{
+    opacity: 1;
+    transition: .7s;
+
+}
+
+.cars-description{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    text-align: center;
+    padding-top: 30%;
+    opacity: 0;
+    transition: .7s;
+    background-color: rgba(0,0,0,.5);
+    font: normal 36px 'Open Sans', sans-serif;
+
+
+}
+@media (max-width: 1000px){
+
+    .cars .cars-wrapper ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cars-description{
+        font: normal 28px 'Open Sans', sans-serif;
+    }
+    
+}
+
+
+
+
+/*-------------
+    Footer
+-------------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #414a4f;
+    padding: 60px;
+    margin:30px;
+    background-image: url(img/back2.jpg);
+    background-size: 250vh;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    font-size: 32px;
+
+}
+
+footer ul li{
+    margin: 0 8px;  
+     padding: 20px;
+     display: flex;
+}
+footer ul li:hover{
+    
+}
+footer ul li p {
+    padding:10px;
+}
+footer ul li a{
+    transition: .7s;
+}
+footer ul li a:hover {
+    color:#000000;
+    transition: .7s;
+    opacity: 0.8;
+
+}
+
+@media (max-width: 700px){
+
+    footer{
+        padding: 80px 15px;
+    }
+}
+@media (max-width: 800px){
+    footer ul{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+    padding:0px;
+    font-size: 22px;
+    }
+        footer ul li{
+        margin: 5px;  
+        padding: 5px;
+        display: flex;
+        }
+}
+
+

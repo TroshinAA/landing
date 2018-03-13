@@ -1,0 +1,343 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sans-serif;
+    color: #555;
+}
+body{
+    scroll-behavior: smooth;
+}
+ul, nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 125px 100px;
+}
+
+@media (max-width: 1000px){
+
+    section{
+        padding: 100px 50px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    section{
+        padding: 80px 30px;
+    }
+
+}
+
+/*-------------
+    Header navbar
+-------------*/
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+    font-size: 30px;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+header nav li{
+    margin: 0 15px;
+    padding: 10px;
+    transition: .7s;
+    border-radius: 8px;
+}
+header nav li:hover {
+background-color: #d3d3d3;
+transition: .7s;
+}
+header nav li:first-child{
+    margin-left: 0; 
+}
+header nav li:last-child{
+    margin-right: 0;    
+}
+
+
+
+@media (max-width: 800px){
+    header{
+        padding: 20px 50px;
+        font-size: 25px;
+    }
+    header nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav li{
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
+/*----------------
+    background-top
+----------------*/
+
+.background-top{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.background-top .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196F3;
+    z-index: -1;
+}
+
+.background-top .background-image:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #414a4f;
+    opacity: 0.75;
+}
+
+.background-top h1{
+    font: bold 40px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.background-top h3{
+    font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 800px){
+
+    .background-top{
+        min-height: 800px;
+    }
+
+    .background-top h1{
+        font-size: 24px;
+    }
+
+    .background-top h3{
+        font-size: 12px;
+    }
+
+    .background-top a.btn{
+        padding: 15px 40px;
+    }
+
+}
+
+
+
+
+
+/*----------- 
+         self  
+-------------------*/
+.self{
+    background-color: #fff;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: : 100%;
+}
+.selfimg{
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+/*--------------
+      concert
+-------------*/
+
+.foto-concert{
+   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transition: .7s;
+}
+.foto-concert .foto-rew {
+    padding: 10px;
+    flex-basis: 50%;
+}
+.foto1{
+    width: 100%;
+}
+audio{
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .foto-concert{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: .7s;
+    }
+     .foto-concert .foto-rew{
+        flex-basis: 100%;
+         }
+}
+/*------------------------
+        СПАРТАК
+        -----------------*/
+.vid{
+    text-align: center;
+}
+.vid img{
+    padding: 10px;
+    width: 50%;
+}
+.vid .vid-s{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 1000px){
+    .vid .vid-s{
+
+        flex-direction: column;
+    }
+    .vid img{
+        width: 100%;
+    }
+}
+
+/*-------------------
+    cars
+    --------------*/
+
+.cars {
+    
+}
+.cars img{
+    padding: 10px;
+
+}
+.cars .cars-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.cars .cars-wrapper .ff1{
+   flex-basis: 40%;
+}
+.cars .cars-wrapper .ff2{
+    flex-basis: 60%;
+}
+@media (max-width: 1000px){
+
+    .cars img{
+        width: 100%;
+    }
+    
+    .cars .cars-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cars .cars-wrapper .ff1{
+        flex-basis: 100%;
+    }
+    .cars .cars-wrapper .ff2{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+/*-----------
+    footer
+---------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #414a4f;
+    padding: 60px 0;
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+footer ul li{
+    margin: 0 8px;  
+}
+
+footer ul li:first-child{
+    margin-left: 0; 
+}
+
+footer ul li:last-child{
+    margin-right: 0;    
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+}
+
+footer p a{
+    color: #fff;
+}
+
+@media (max-width: 700px){
+
+    footer{
+        padding: 80px 15px;
+    }
+
+}
